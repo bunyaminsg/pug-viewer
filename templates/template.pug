@@ -1,0 +1,19 @@
+mixin content
+        h1 Welcome to #{application}
+        div Hi, 
+            b #{name}
+
+mixin header
+        meta(charset='utf-8')
+
+        // file includes are not supported in online editor, you can edit it in your local after finished
+        // style(type='text/css')
+            // include styles.css
+
+html(lang='en')
+    head
+        +header
+
+    body.body-container
+        +content
+
